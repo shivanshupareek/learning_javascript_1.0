@@ -1,4 +1,3 @@
-
 /*
 Variables are the core of JavaScript.
 There are three main types of variables out of which only two types are still recommended to be used:
@@ -35,7 +34,7 @@ const fullName = "Shivanshu Pareek";
 
 /*
     ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
-        the same variable name[fullName] in the entire project unless it is within a different block scope
+        the same variable name[fullName] in the entire project unless it is within a different block scope.
 */
 
 //==> Now we will look at the second variable type which is "let"
