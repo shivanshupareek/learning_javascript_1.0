@@ -1,17 +1,17 @@
 /*
 Variables are the core of JavaScript.
-There are three main types of variables out of which only two types are still recommended to be used:
+There are three main keywords to declare a variable out of which only two types are still recommended to be used:
     1. "let"
     2. "const" (short for constant)
 
     3. "var" --> not recommended since 2015
 
-⬆ the aforementioned types are called "DECLARATION KEYWORDS" since these are the names of variable types.
+⬆ the aforementioned types are called "DECLARATION KEYWORDS" since these are the names of declaration keyword.
 
 
 A JavaScript variable expression statement is written as follows:
     => [declaration keyword(const/let)] [variable name] [equals] [variable value]
-    => const[variable type] name[variable name] =[equal sign] "Shivanshu"[variable value]
+    => const[declaration keyword] name[variable name] =[equal sign] "Shivanshu"[variable value]
 
 For a structured explanation of this file, see: src/content/1.DeclarationTypes.explained.md
 */
@@ -29,16 +29,16 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
         initialising at the same time.
 */
 
-//==> Now we will look at the first variable type which is "const"
+//==> Now we will look at the first declaration keyword which is "const"
 
 const fullName = "Shivanshu Pareek";
 
 /*
-    ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
+    ==> As the statement above uses the const 'declaration keyword' it means that it is constant, and we can no longer use
         the same variable name[fullName] in the entire project unless it is within a different block scope.
 */
 
-//==> Now we will look at the second variable type which is "let"
+//==> Now we will look at the second declaration keyword which is "let"
 
 let firstName = "Shivanshu";
 
@@ -66,7 +66,7 @@ lastName = "Pareek";
         // -------------
 
 /*
-    ==> Now we will look at the third variable type which is "var"
+    ==> Now we will look at the third declaration keyword which is "var"
 
     ==> Since ECMAScript 2015, when we got "let" and "const" for the first time, The JavaScript community recommended
         for developers to stop using "var" and replace it with "let" and "const"
@@ -79,7 +79,7 @@ lastName = "Pareek";
 //var middleName = "Kumar";
 
 // ==> As we can see, the IDE is also showing a linting warning for using "var" instead of "let" or "const"
-// ==> The biggest reason is that var is a declaration type without scope which means it is always hoisted at the top
+// ==> The biggest reason is that var is a declaration keyword without scope which means it is always hoisted at the top
 //     irrespective of the function it is written in.
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -87,13 +87,13 @@ lastName = "Pareek";
 /*
 Reassigning VS redeclaring
 
-==> Reassigning is when we already have a statement, but we change its value without using a declaration type:
+==> Reassigning is when we already have a statement, but we change its value without using a declaration keyword:
 let a = 10;
 a = 20 //This means that I have assigned a new value to the variable.
 
 ==> Redeclaring is when we write a new statement using a name which already exists.
 let b = 100 //this is called declaring a variable
-let b = 200 // This is called redeclaring a variable because even though the declaration type is the same, the name is being reused, which isn't allowed.
+let b = 200 // This is called redeclaring a variable because even though the declaration keyword is the same, the name is being reused, which isn't allowed.
 
 this means that in the case of "let" and "var", reassigning a value is possible,
 but only in the case of "var", redeclaring a value is possible.
