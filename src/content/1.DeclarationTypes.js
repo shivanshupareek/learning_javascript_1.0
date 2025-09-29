@@ -124,5 +124,15 @@ This is only possible in the case of "var" since it is always hoisted at the top
 
 2. BLOCK SCOPE
 This means that the variable is only accessible inside a block of code.
+A block of code can be anything inside curly braces => {}
+{ anything inside this is inside a block of code and is not accessible outside these curly braces }
 
+example:
+{ let a = 10 }
+console.log(a) //this will show has a referenceError since we are trying to access "a" outside the code block
+and the console cannot do that, so it has no reference to the "a" we are trying to call outside
+
+3. LEXICAL SCOPE
+This is a little advanced for this stage, but it essentially means that an inner block of code/function can access the
+variables of its outer function and vice versa
 */
