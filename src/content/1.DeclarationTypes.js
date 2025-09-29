@@ -6,13 +6,14 @@ There are three main types of variables out of which only two types are still re
 
     3. "var" --> not recommended since 2015
 
- ⬆ the aforementioned types are called "DECLARATION KEYWORDS" since these are the names of variable types.
+⬆ the aforementioned types are called "DECLARATION KEYWORDS" since these are the names of variable types.
 
 
 A JavaScript variable expression statement is written as follows:
     => [declaration keyword(const/let)] [variable name] [equals] [variable value]
     => const[variable type] name[variable name] =[equal sign] "Shivanshu"[variable value]
 
+For a structured explanation of this file, see: src/content/1.DeclarationTypes.explained.md
 */
 
         // -------------
@@ -75,6 +76,53 @@ lastName = "Pareek";
         were challenging to debug.
 */
 
-var middleName = "Kumar";
+//var middleName = "Kumar";
 
 // ==> As we can see, the IDE is also showing a linting warning for using "var" instead of "let" or "const"
+// ==> The biggest reason is that var is a declaration type without scope which means it is always hoisted at the top
+//     irrespective of the function it is written in.
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/*
+Reassigning VS redeclaring
+
+==> Reassigning is when we already have a statement, but we change its value without using a declaration type:
+let a = 10;
+a = 20 //This means that I have assigned a new value to the variable.
+
+==> Redeclaring is when we write a new statement using a name which already exists.
+let b = 100 //this is called declaring a variable
+let b = 200 // This is called redeclaring a variable because even though the declaration type is the same, the name is being reused, which isn't allowed.
+
+this means that in the case of "let" and "var", reassigning a value is possible,
+but only in the case of "var", redeclaring a value is possible.
+
+since we no longer use "var", nor is it encouraged, redeclaration of a variable is no longer possible
+*/
+
+
+//----------------------------------------------------------------------------------------------------------------------
+
+
+/*
+
+SCOPING
+
+Scope refers to where and to what extent we can access a declared variable. The reachability and accessibility of a variable
+is what it defined, which is almost self-explanatory by the term scope i.e. it has scope of maximum accessibility which means the variable
+is accessible from anywhere in the code file. (Which sounds cool but is dev's nightmare.)
+
+There are three different types of scopes:
+1. Global Scope
+2. Block Scope
+3. Lexical Scope
+
+1. GLOBAL SCOPE
+A global scope means that we can access a variable irrespective of where it is located in the code.
+This is only possible in the case of "var" since it is always hoisted at the top of the file
+
+2. BLOCK SCOPE
+This means that the variable is only accessible inside a block of code.
+
+*/
