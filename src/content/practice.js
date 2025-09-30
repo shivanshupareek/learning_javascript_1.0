@@ -1,18 +1,19 @@
-
+/*
 function bankAccount (owner) {
     let balance = 0;
 
     return {
         deposit(amount) {
             balance += amount;
-            console.log(`${owner} has a total balance of ${balance}`)
+            console.log(`${owner} has a total balance of ₹${balance}`)
         },
         withdraw(amount) {
             if (amount > balance) {
-                console.log("insufficient funds")
+                const remaining = amount - balance
+                console.log(`insufficient funds! lacking ₹${remaining}`)
             } else {
                 balance -= amount
-                console.log(`${owner} has a total balance of ${balance}`)
+                console.log(`${owner} has a total balance of ₹${balance}`)
             }
         }
     }
@@ -23,3 +24,7 @@ console.log(currentOwner.deposit(1000))
 console.log(currentOwner.deposit(1000))
 console.log(currentOwner.withdraw(1000))
 console.log(currentOwner.withdraw(1500))
+*/
+
+console.log(x);
+var x = 10;

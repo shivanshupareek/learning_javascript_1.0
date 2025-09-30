@@ -440,11 +440,12 @@ Temporal dead zone
 this is when we declare a variable, but we log/ call it before it is initialised, the engine knows that a variable with
 that name has been declared, but it cannot access it since it hasn't been initialised.
 
-console.log(x) ==> javascript knows that x exists in the file but not what its value is as it is single-threaded, and it
-                   cannot read the value since the value comes after being called for, which means that JS doesn't know
-                   the value yet because it cannot access it.
+console.log(x) ==> javascript knows that x exists in the file but not what its value is as it is designed in a way to
+                   prevent errors and bugs faced in such situations with var. It cannot read the value since the
+                   value comes after being called for, which means that JS doesn't know the value yet because it cannot
+                   access it.
 let x = 10; ==> when JavaScript comes down, it will know that value because it now has access to it, but since it is
-                single-threaded, it cannot go back up and give the console the value of "x"
+                designed to do so and fix a mistake they made with var, it cannot go back up and give the console the value of "x"
 
 The only way to fix this issue is by initialising the variable for calling it, as mentioned below:
 let x = 10; ==> here JS knows the value of x and carries it down with it
@@ -456,5 +457,32 @@ console.log(a)
 let a; will give the error as ==> Cannot access 'a' before initialisation
 let a = 10; will also give the error as ==> Cannot access 'a' before initialisation
 
+It is the same thing with const too.
 
+ANYTHING ABOVE A DECLARED VARIABLE WITHOUT INITIALISATION IS A TEMPORAL DEAD ZONE
+
+==> this entire area before and above "const z = 100" is considered as a TDZ
+const z = 100;
+
+This does not apply to "var" as it is globally scoped, and it is, by default, hoisted at the very top.
+when "var" is hoisted at the top, it is hoisted with declaration but without initialisation, which is why when you
+look at the TDZ for "var", it will show you undefined rather than a ReferenceError for initialisation like it does with
+"let" and "const"
+
+example:
+
+var a = 10; ==> this is split into two parts:
+part 1: var a = undefined
+part 2: a = 10;
+
+when we write the following:
+console.log(a)
+var a = 10;
+
+the console will show undefined, not initialisation error because it actually reads the aforementioned as such:
+var a = undefined
+console.log(a) //declared var but not initialised
+a = 10; //above this is TDZ
+
+the same is true for "let" and "const" too, but JS keeps it uninitialised rather than undefined, which it does for "var"
 */
