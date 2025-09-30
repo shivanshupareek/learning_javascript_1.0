@@ -31,7 +31,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 
 //==> Now we will look at the first declaration keyword which is "const"
 
-const fullName = "Shivanshu Pareek";
+//const fullName = "Shivanshu Pareek";
 
 /*
     ==> As the statement above uses the const 'declaration keyword' it means that it is constant, and we can no longer use
@@ -40,14 +40,14 @@ const fullName = "Shivanshu Pareek";
 
 //==> Now we will look at the second declaration keyword which is "let"
 
-let firstName = "Shivanshu";
+//let firstName = "Shivanshu";
 
 /*
     ==> As the name of the variable suggests, JavaScript will "let" us re-use this variable name [firstname] again in the code,
         but we can also change the value of the variable as shown below
 */
 
-firstName = "John";
+//==> firstName = "John";
 
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
@@ -58,8 +58,8 @@ firstName = "John";
     The example is as follows:
  */
 
-let lastName;
-lastName = "Pareek";
+//let lastName;
+//lastName = "Pareek";
 
 // ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
 
@@ -170,7 +170,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 
 //==> Now we will look at the first variable type which is "const"
 
-const fullName = "Shivanshu Pareek";
+//==>const fullName = "Shivanshu Pareek";
 
 /*
     ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
@@ -179,14 +179,14 @@ const fullName = "Shivanshu Pareek";
 
 //==> Now we will look at the second variable type which is "let"
 
-let firstName = "Shivanshu";
+//==>let firstName = "Shivanshu";
 
 /*
     ==> As the name of the variable suggests, JavaScript will "let" us re-use this variable name [firstname] again in the code,
         but we can also change the value of the variable as shown below
 */
 
-firstName = "John";
+//firstName = "John";
 
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
@@ -197,8 +197,8 @@ firstName = "John";
     The example is as follows:
  */
 
-let lastName;
-lastName = "Pareek";
+//let lastName;
+//lastName = "Pareek";
 
 // ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
 
@@ -309,7 +309,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 
 //==> Now we will look at the first variable type which is "const"
 
-const fullName = "Shivanshu Pareek";
+//const fullName = "Shivanshu Pareek";
 
 /*
     ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
@@ -318,14 +318,14 @@ const fullName = "Shivanshu Pareek";
 
 //==> Now we will look at the second variable type which is "let"
 
-let firstName = "Shivanshu";
+//let firstName = "Shivanshu";
 
 /*
     ==> As the name of the variable suggests, JavaScript will "let" us re-use this variable name [firstname] again in the code,
         but we can also change the value of the variable as shown below
 */
 
-firstName = "John";
+//firstName = "John";
 
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
@@ -336,8 +336,8 @@ firstName = "John";
     The example is as follows:
  */
 
-let lastName;
-lastName = "Pareek";
+//let lastName;
+//lastName = "Pareek";
 
 // ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
 
@@ -455,12 +455,6 @@ when a variable is in the temporal dead zone, it doesn't matter if it has been i
 console.log(a)
 let a; will give the error as ==> Cannot access 'a' before initialisation
 let a = 10; will also give the error as ==> Cannot access 'a' before initialisation
-*/
-
-/*
-
-Understanding technicality and hoisting
-
 
 
 */
