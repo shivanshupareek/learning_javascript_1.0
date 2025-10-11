@@ -1,4 +1,4 @@
-/*
+ /*
 Variables are the core of JavaScript.
 There are three main keywords to declare a variable out of which only two types are still recommended to be used:
     1. "let"
