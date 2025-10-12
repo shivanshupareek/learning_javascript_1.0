@@ -1,11 +1,11 @@
 
-const string = "hello";                           // a text in JavaScript is called a string.
+const string = "hello";                           // a sequence of characters in JavaScript is called a string.
 
-const number  = 10n;                             // a number in JS is called a number
+const number  = 10;                             // a number in JS is called a number
 
 const boolean = true;                           // only true or false values are called booleans
 
-const bigInt = 12939;                           // any number with "n" at the end is a bigInt
+const bigInt = 12939n;                           // any number with "n" at the end is a bigInt
 
 const nullValue = null;                            // purposefully writing null as an initial value is called null
 
@@ -56,6 +56,19 @@ const b = 10;
 b = 20;
 Since const is an immutable variable the value of b = 10, once initialised, cannot be changed by any means.
 
+One thing to keep in mind is that const does not allow reassigning the value but when an object is assigned to the const
+variable, the values inside the object are mutable which means that const is indirectly mutable when it is paired with
+objects because objects are mutable. for example
+
+const x = 10
+x = 20 //this is reassigning a value which is not possible with const as the direct value of const is not mutable
+
+const object = {
+    name: "hello"
+}
+
+object.name = "New hello" // this is where we are reassigning the value of the key inside an object which means that
+it is mutable despite using the "const" keyword.
 --------------
 
 
@@ -73,9 +86,15 @@ i.e. null is on purpose, undefined is a mistake
 let a;  //this variable statement has not been initialised and assigned any value so by default it is undefined.
 let a = null; this means that you have purposely decided not to assign any value to the variable.
 
+one quirk about "null" is that it a type of object which is still a weird bug in Javascript since when it was built
+even thought the value is null, when you check "typeof", it shows an object, for example:
+
+let a = null;
+console.log(typeof(a)) // object
 
 Symbol
 -----------------
+Symbol was introduced in ES5/ES2015
 Symbol is an immutable value which means that once a value has been initialised to Symbol, it can't be changed.
 
 As you can see in the symbol example above, even though the values of both symbols are the same, the declaration of the
@@ -101,10 +120,11 @@ with the same name which allows us to reuse multiple names without any collision
 
 BigInt
 ----------------
+BigInt was also introduced in ES6/ES2020, and is the latest addition to the primitive data types after Symbol.
 When a number becomes too big in Javascript, it is not able to handle it accurately and can create errors as that
 number is too big to handle, to check that, we can do two things,
 
-let a =  Number.MAX_SAFE_VALUE //this will show the largest number we can use which can safely control(9007199254740991)
+let a =  Number.MAX_SAFE_INTEGER //this will show the largest number we can use which can safely control(9007199254740991)
                                  and we can expect errors or bugs in any value bigger than this as javascript cannot
                                  handle it.
 
@@ -125,6 +145,28 @@ with a bigint, for example:
 let a = 123456789n
 
 a + 5n  //
-console.log(a) //this will log the value of 123456794 since we added 5 to it but "n" made it recognisable as a bigint to
+console.log(a) //this will log the value of 123456794n since we added 5n to it but "n" made it recognisable as a bigint to
                  the variable "a"
- */
+
+
+------------------------------------------------
+
+BOXING OBJECT FORM
+
+Javascript does a very quirky thing which is that it allows primitive data types to access and use object methods and
+properties by temporarily converting the primitive data types into object when they are using methods then once it's done
+it'll take them back to primitive data types.
+for example
+
+console.log("hello world".toUpperCase())
+console.log((33).toFixed(3))
+
+"hi".toUpperCase() will return "HI"
+this is because Javascript will write it as follows:
+ ==> const new String("Hi").toUpperCase()
+
+once it is used and done, Javascript will discard the box object form and return it back to a primitive data type.
+
+This is also why we should never use the "new" keyword with a variable as it may create bugs and unexpected behaviour in
+the code
+*/
