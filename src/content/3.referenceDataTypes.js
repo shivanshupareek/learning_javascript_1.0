@@ -20,7 +20,7 @@ b = "Pareek" // so the value of "a" and "b" have both been changed to "Pareek" f
 Dynamic typing
 
 JavaScript allows dynamic typing, which means that, unlike other languages which use static typing, JavaScript will allow
- typing dynamically, which means that the value of a variable can be changed dynamically.
+typing dynamically, which means that the value of a variable can be changed dynamically.
 
 As studied before, there are 7 data types; in static typing, once we declare and initialise a variable with a data type,
 the data type cannot be changed even if it is reassigned, for example:
@@ -67,10 +67,10 @@ the arithmetic value of adding (+) has two features:
 1. it can add
 2. it can concatenate
 
-when there is a string, the "+" sign will always. by default, choose to concatenate rather than add, and this is because
-of type coercion.  it can mix two different types.
-to concatenate, JavaScript will monitor for two things, and if both these are fulfilled, it will choose concatenating, and
-the two categories are:
+when there is a string, the "+" sign will always, by default, choose to concatenate rather than add, and this is because
+of type coercion.
+It can mix two different types to concatenate, JavaScript will monitor for two things, and if both these conditions are
+fulfilled, it will choose concatenating, and the two categories are:
 1. it has to be a string
 2. it needs to have addition.
 
@@ -78,13 +78,13 @@ if both the aforementioned conditions are met, JavaScript will command the plus 
 foe example:
 
 "5" + 5 = "55" //this is because it fulfills both conditions of sting and add and hence it will join both 5 into
-                          a string
+                 a string
 
 but since this feature is only available with the added sign, it doesn't work with other others,
 for example
 
 "5" - 2 = 3 // this is now a number even though there is a string, since the subtracted sign does not have the
-                           ability to concatenate, it will turn the string into a number and then subtract.
+               ability to concatenate, it will turn the string into a number and then subtract.
 
 --------------------------------------------------
 
@@ -99,7 +99,7 @@ which is why JavaScript has allocated true or false to keywords, data types and 
 either be associated with being true, i,e, truthy
 or associated with being false, i.e. falsy.
 
-but since there could be a massive number of types, keywords, etc... how do we know what value is being assigned to them,
+but since there could be a massive number of types, keywords, etc... how do we know which value is being assigned to them,
 to simplify this concept and make it easy for developers to remember, there are very few objects and data types which
 have falsy values, the rest all have truthy values. so all we have to remember are a few values which are falsy:
 1. 0 // the number zero "0" is a falsy value
@@ -114,13 +114,12 @@ there are only 6 falsy values, and the rest all are truthy values in JavaScript
 if you wish to check this or verify the value and know if it is truthy or falsy, we can use "!!" before the value.
 For example, in the console, if you type !!0, it will show the value of zero as falsy.
 
-
 in addition to this, true and false also have other values which means that
 true always has a value of 1
 false always has a value of 0
 
 so if you try true and false, it will be converted to ==> 1 + 0 and this will result in 1
-console.log(true + false)
+console.log(true + false) //1
 
 null also has a value of 0
 
@@ -131,8 +130,7 @@ NaN refers to a failed number operation which means that any number which does n
 or does not compute the answer in the number data type will be considered a failed number operator and
 a failed number operator is in itself a number which is why, even though it has failed, it has failed as number and hence
 NaN is a number.
-For example:
-
+For example,
  console.log(2 * "hi") // NaN
  as we multiply the number with a string, the response will be in a number but since the result of the multiplication
  cannot result in a complete number due to being multiplied with a string, it fails the operation as a number because a
