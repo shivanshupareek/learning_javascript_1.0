@@ -486,6 +486,3 @@ a = 10; //above this is TDZ
 
 the same is true for "let" and "const" too, but JS keeps it uninitialised rather than undefined, which it does for "var"
 */
-
- let data = new Array(1000000);
- console.log(data);
