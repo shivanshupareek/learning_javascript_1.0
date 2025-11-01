@@ -100,7 +100,7 @@ which is why javascript has allocated true or false to keywords, data types and 
 either be associated with being true, i,e, truthy
 or associated with being false, i.e. falsy.
 
-but since there could be a massive amount of types, keywords, etc.. how do we know what value is being assigned to them,
+but since there could be a massive amount of types, keywords, etc... how do we know what value is being assigned to them,
 to simplify this concept and make it easy for developers to remember, there are very few objects and data types which
 have falsy values, the rest all have truthy values. so all we have to remember is a few values which are falsy:
 1. 0            // the number zero "0" is a falsy value

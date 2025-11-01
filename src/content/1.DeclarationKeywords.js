@@ -10,10 +10,10 @@ There are three main keywords to declare a variable out of which only two types 
 
 
 A JavaScript variable expression statement is written as follows:
-    => [declaration keyword(const/let)] [variable name] [equals] [variable value]
+    => [declaration keyword(const/let)] [identifier(variable name)] [equals(arithmetic operator)] [variable value]
     => const[declaration keyword] name[variable name] =[equal sign] "Shivanshu"[variable value]
 
-For a structured explanation of this file, see: src/content/1.DeclarationTypes.explained.md
+For a structured explanation of this file, see: src/md/1.DeclarationTypes.explained.md
 */
 
         // -------------
@@ -22,7 +22,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
     ==> Since this is the first time we are giving a value to a variable, it's called initialisation.
 
     ==> Since this is also where we are giving a value to a variable with its name, it is also a variable declaration.
-        const fullName(this is declaration - declaring a variable with a given name) = "Shivanshu Pareek"(this is an initialisation
+        const fullName(this is declaration - declaring a variable with a given name(identifier)) = "Shivanshu Pareek"(this is an initialisation
         by giving it some value)
 
     ==> This means that when we create a variable for the first time and assign a value to a name, we are declaring and
@@ -486,3 +486,6 @@ a = 10; //above this is TDZ
 
 the same is true for "let" and "const" too, but JS keeps it uninitialised rather than undefined, which it does for "var"
 */
+
+ let data = new Array(1000000);
+ console.log(data);
