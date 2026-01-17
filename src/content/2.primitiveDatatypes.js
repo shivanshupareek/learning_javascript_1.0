@@ -12,7 +12,7 @@ const nullValue = null;                            // purposefully writing null 
 const SymbolValue = Symbol("hello");    // a unique value is called a symbol
 const SymbolNewValue = Symbol("hello"); // a unique value is called a symbol
 
-let undefinedValue;                                      // declaring a variable without initialising is called undefined
+let undefinedValue;                                      // declaring a variable without initializing is called undefined
 
 /*
 // The difference between primitive data types and reference data types is essentially in itself.
@@ -50,13 +50,13 @@ a = 20;
 Since let is a mutable keyword, we have changed and assigned a new value to it.
 
 Immutability
-This means that the value assigned to the variable can never be changed/replaced/altered once it has been initialised.
+This means that the value assigned to the variable can never be changed/replaced/altered once it has been initialized.
 
 const b = 10;
 b = 20;
-Since const is an immutable variable, the value of b = 10, once initialised, cannot be changed by any means.
+Since const is an immutable variable, the value of b = 10, once initialized, cannot be changed by any means.
 
-One thing to keep in mind is that const does not allow reassigning the value, but when an object is assigned to the const
+One thing to keep in mind is that const does not allow reassigning the value. However, when an object is assigned to the const
 variable, the values inside the object are mutable, which means that const is indirectly mutable when it is paired with
 objects because objects are mutable. for example
 
@@ -79,11 +79,11 @@ NULL
 
 If you do not want to allot any value to your variable, then you can assign the value as null, which can also be a placeholder
 for a value which you want to add later.
-if you forget to initialise a variable and forget to assign any value to it, then it gets a default value of undefined,
+if you forget to initialize a variable and forget to assign any value to it, then it gets a default value of undefined,
 which is why if you purposefully do not assign any value to a variable, you can use null.
 i.e. null is on purpose, undefined is a mistake
 
-let a; //this variable statement has not been initialised and assigned any value, so by default it is undefined.
+let a; //this variable statement has not been initialized and assigned any value, so by default it is undefined.
 let a = null; this means that you have purposely decided not to assign any value to the variable.
 
 one quirk about "null" is that it is a type of object, which is still a unique bug in JavaScript since when it was built
@@ -95,7 +95,7 @@ console.log(typeof(a)) // object
 Symbol
 -----------------
 Symbol was introduced in ES5/ES2015
-Symbol is an immutable value, which means that once a value has been initialised to Symbol, it can't be changed.
+Symbol is an immutable value, which means that once a value has been initialized to Symbol, it can't be changed.
 
 As you can see in the symbol example above, even though the values of both symbols are the same, the declaration of the
 variable has made it so that they are different and their values are individual.
@@ -145,7 +145,7 @@ with a bigint, for example:
 let a = 123456789n
 
 a + 5n  //
-console.log(a) //this will log the value of 123456794n since we added 5n to it, but "n" made it recognisable as a bigint to
+console.log(a) //this will log the value of 123456794n since we added 5n to it, but "n" made it recognizable as a bigint to
                  the variable "a"
 
 
@@ -154,7 +154,7 @@ console.log(a) //this will log the value of 123456794n since we added 5n to it, 
 BOXING OBJECT FORM
 
 JavaScript does a very quirky thing which is that it allows primitive data types to access and use object methods and
-properties by temporarily converting the primitive data types into an object when they are using methods, then once it's done,
+properties by temporarily converting the primitive data types into an object when they are using methods; then once it's done,
 it'll take them back to primitive data types.
 for example
 

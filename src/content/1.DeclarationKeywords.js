@@ -19,14 +19,14 @@ For a structured explanation of this file, see: src/md/1.DeclarationTypes.explai
         // -------------
 
 /*
-    ==> Since this is the first time we are giving a value to a variable, it's called initialisation.
+    ==> Since this is the first time we are giving a value to a variable, it's called initialization.
 
     ==> Since this is also where we are giving a value to a variable with its name, it is also a variable declaration.
-        const fullName(this is declaration - declaring a variable with a given name(identifier)) = "Shivanshu Pareek"(this is an initialisation
+        const fullName(this is declaration - declaring a variable with a given name(identifier)) = "Shivanshu Pareek"(this is an initialization
         by giving it some value)
 
     ==> This means that when we create a variable for the first time and assign a value to a name, we are declaring and
-        initialising at the same time.
+        initializing at the same time.
 */
 
 //==> Now we will look at the first declaration keyword which is "const"
@@ -34,7 +34,7 @@ For a structured explanation of this file, see: src/md/1.DeclarationTypes.explai
 //const fullName = "Shivanshu Pareek";
 
 /*
-    ==> As the statement above uses the const 'declaration keyword' it means that it is constant, and we can no longer use
+    ==> As the statement above uses the const 'declaration keyword', it means that it is constant, and we can no longer use
         the same variable name[fullName] in the entire project unless it is within a different block scope.
 */
 
@@ -52,7 +52,7 @@ For a structured explanation of this file, see: src/md/1.DeclarationTypes.explai
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
 /*
-==> With "let" we can create a variable with just the name and do not always have to initialise with a value
+==> With "let" we can create a variable with just the name and do not always have to initialize with a value
     which can be assigned anytime in the future.
 
     The example is as follows:
@@ -61,7 +61,7 @@ For a structured explanation of this file, see: src/md/1.DeclarationTypes.explai
 //let lastName;
 //lastName = "Pareek";
 
-// ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
+// ==> As we can see, the lastName variable was created without initializing any value which was assigned later.
 
         // -------------
 
@@ -158,14 +158,14 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 // -------------
 
 /*
-    ==> Since this is the first time we are giving a value to a variable, it's called initialisation.
+    ==> Since this is the first time we are giving a value to a variable, it's called initialization.
 
     ==> Since this is also where we are giving a value to a variable with its name, it is also a variable declaration.
-        const fullName(this is declaration - declaring a variable with a given name) = "Shivanshu Pareek"(this is an initialisation
+        const fullName(this is declaration - declaring a variable with a given name) = "Shivanshu Pareek"(this is an initialization
         by giving it some value)
 
     ==> This means that when we create a variable for the first time and assign a value to a name, we are declaring and
-        initialising at the same time.
+        initializing at the same time.
 */
 
 //==> Now we will look at the first variable type which is "const"
@@ -173,7 +173,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 //==>const fullName = "Shivanshu Pareek";
 
 /*
-    ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
+    ==> As the statement above uses the const 'variable type', it means that it is constant, and we can no longer use
         the same variable name[fullName] in the entire project unless it is within a different block scope.
 */
 
@@ -191,7 +191,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
 /*
-==> With "let" we can create a variable with just the name and do not always have to initialise with a value
+==> With "let" we can create a variable with just the name and do not always have to initialize with a value
     which can be assigned anytime in the future.
 
     The example is as follows:
@@ -200,7 +200,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 //let lastName;
 //lastName = "Pareek";
 
-// ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
+// ==> As we can see, the lastName variable was created without initializing any value which was assigned later.
 
 // -------------
 
@@ -297,14 +297,14 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 // -------------
 
 /*
-    ==> Since this is the first time we are giving a value to a variable, it's called initialisation.
+    ==> Since this is the first time we are giving a value to a variable, it's called initialization.
 
     ==> Since this is also where we are giving a value to a variable with its name, it is also a variable declaration.
-        const fullName(this is declaration - declaring a variable with a given name) = "Shivanshu Pareek"(this is an initialisation
+        const fullName(this is declaration - declaring a variable with a given name) = "Shivanshu Pareek"(this is an initialization
         by giving it some value)
 
     ==> This means that when we create a variable for the first time and assign a value to a name, we are declaring and
-        initialising at the same time.
+        initializing at the same time.
 */
 
 //==> Now we will look at the first variable type which is "const"
@@ -312,7 +312,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 //const fullName = "Shivanshu Pareek";
 
 /*
-    ==> As the statement above uses the const 'variable type' it means that it is constant, and we can no longer use
+    ==> As the statement above uses the const 'variable type', it means that it is constant, and we can no longer use
         the same variable name[fullName] in the entire project unless it is within a different block scope.
 */
 
@@ -330,7 +330,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 // ==> This shows that the new value of the variable name "firstName" has now been updated to "John," which previously was "Shivanshu"
 
 /*
-==> With "let" we can create a variable with just the name and do not always have to initialise with a value
+==> With "let" we can create a variable with just the name and do not always have to initialize with a value
     which can be assigned anytime in the future.
 
     The example is as follows:
@@ -339,7 +339,7 @@ For a structured explanation of this file, see: src/content/1.DeclarationTypes.e
 //let lastName;
 //lastName = "Pareek";
 
-// ==> As we can see, the lastName variable was created without initialising any value which was assigned later.
+// ==> As we can see, the lastName variable was created without initializing any value which was assigned later.
 
 // -------------
 
@@ -426,7 +426,7 @@ Creating a statement
        hence JS will fill it with the value of undefined as default until we do not replace it with an actual
        reference data type
 
-3. give it a value - "initialise"
+3. give it a value - "initialize"
 
 4. change its value - "reassign"
 
@@ -437,7 +437,7 @@ Creating a statement
 /*
 Temporal dead zone
 
-this is when we declare a variable, but we log/ call it before it is initialised, the engine knows that a variable with
+this is when we declare a variable, but we log/ call it before it is initialized, the engine knows that a variable with
 that name has been declared, but it cannot access it since it hasn't been initialised.
 
 console.log(x) ==> javascript knows that x exists in the file but not what its value is as it is designed in a way to
@@ -447,26 +447,26 @@ console.log(x) ==> javascript knows that x exists in the file but not what its v
 let x = 10; ==> when JavaScript comes down, it will know that value because it now has access to it, but since it is
                 designed to do so and fix a mistake they made with var, it cannot go back up and give the console the value of "x"
 
-The only way to fix this issue is by initialising the variable for calling it, as mentioned below:
+The only way to fix this issue is by initializing the variable for calling it, as mentioned below:
 let x = 10; ==> here JS knows the value of x and carries it down with it
 console.log(x) ==> when JS reaches the place where "x" is needed, it will give it the value
 
-when a variable is in the temporal dead zone, it doesn't matter if it has been initialised or not, for example
+when a variable is in the temporal dead zone, it doesn't matter if it has been initialized or not, for example
 
 console.log(a)
-let a; will give the error as ==> Cannot access 'a' before initialisation
-let a = 10; will also give the error as ==> Cannot access 'a' before initialisation
+let a; will give the error as ==> Cannot access 'a' before initialization
+let a = 10; will also give the error as ==> Cannot access 'a' before initialization
 
 It is the same thing with const too.
 
-ANYTHING ABOVE A DECLARED VARIABLE WITHOUT INITIALISATION IS A TEMPORAL DEAD ZONE
+ANYTHING ABOVE A DECLARED VARIABLE WITHOUT INITIALIZATION IS A TEMPORAL DEAD ZONE
 
 ==> this entire area before and above "const z = 100" is considered as a TDZ
 const z = 100;
 
 This does not apply to "var" as it is globally scoped, and it is, by default, hoisted at the very top.
-when "var" is hoisted at the top, it is hoisted with declaration but without initialisation, which is why when you
-look at the TDZ for "var", it will show you undefined rather than a ReferenceError for initialisation like it does with
+when "var" is hoisted at the top, it is hoisted with declaration but without initialization, which is why when you
+look at the TDZ for "var", it will show you undefined rather than a ReferenceError for initialization like it does with
 "let" and "const"
 
 example:
@@ -479,10 +479,42 @@ when we write the following:
 console.log(a)
 var a = 10;
 
-the console will show undefined, not initialisation error because it actually reads the aforementioned as such:
+the console will show undefined, not initialization error because it actually reads the aforementioned as such:
 var a = undefined
-console.log(a) //declared var but not initialised
+console.log(a) //declared var but not initialized
 a = 10; //above this is TDZ
 
 the same is true for "let" and "const" too, but JS keeps it uninitialised rather than undefined, which it does for "var"
 */
+
+
+ // console.log(x);
+ // const x = 10;
+
+ // console.log(a)
+ // let a = 10;
+ // a = 15
+ //
+ // let b = a;
+ // console.log(b);
+ // b += 2;
+ // console.log(b);
+ // console.log(a);
+
+
+ //declarative keyword
+ //identifier
+ //initialised
+ //declaration
+ //scoping
+ //hoisting
+ //temporal dead zone
+ //reinitialization
+ //redeclaration
+ //mutable
+ //immutable
+
+
+ let l = 5;
+ ++l;
+ // console.log(l)

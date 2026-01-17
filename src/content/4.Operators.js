@@ -18,13 +18,13 @@
        it takes the closest previous number it is divisible by and then divides it and sees the left the over between the actual
        number and the closest divisible number. For example,
        let a = 10 % 4 //2
-       This is because the second number(4) is completely divisible by 8(closest divisible from 10 hence actual number - closest divisible number = modulus)
+       This is because the second number(4) is completely divisible by 8 (closest divisible from 10 hence actual number - closest divisible number = modulus)
        which is why we had 10-8 = 2 (hence the modulus is 2)
-       The same thing is tried with 3, the closest divisible number to 10 is 9, so modulus = 1(10-9)
+       The same thing is tried with 3, the closest divisible number to 10 is 9, so modulus = 1 (10-9)
 
     6. "**" exponential
        let a = 10 ** 5; //100,000
-       This is because the first number(10) is multiplied by itself 5 times(10*10*10*10*10=100,000)
+       This is because the first number(10) is multiplied by itself 5 times (10*10*10*10*10=100,000)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
     COMPARISON
@@ -57,7 +57,7 @@
         This is because JavaScript writes it as:
         a = a + 5 //15
 
-    3. "-=" subtract and update it as the value of the variable
+    3. "-=," subtract and update it as the value of the variable
        let b = 10;
         a-=5 //5
         This is because JavaScript writes it as:
@@ -96,15 +96,15 @@ Unary
     let a = 1;
     ++a //2 (this is because it has added 1 to "a")
 
-    if used after the variable (post increment), it will add 1, but after printing the value
+    if used after the variable (post-increment), it will add 1, but after printing the value
     let a = 1;
-    a++ + a //2 (this is because we have to add it to the initialised value, which is why "+ a" was used after it).
+    a++ + a //2 (this is because we have to add it to the initialized value, which is why "+ a" was used after it).
     if we just do this:
     a++ //1 (it will not become 2 by adding 1 and incrementing the value since we did not print it by using the variable)
 
 5. "--" if used before variable (preincrement), it will subtract 1 from the value before printing,
     let a = 2;
-    --a // 1 (this is because it has removed 1 from the initialised value)
+    --a // 1 (this is because it has removed 1 from the initialized value)
 
 6. "!" used to check if a value is not false or not true.
     let a = 5
@@ -117,7 +117,7 @@ Ternary
 
 
 */
-// 10 > 5 ? console.log("Yes 10 is more than 5" ): console.log("No 10 is not more than 5");
+// 10 > 5 ? console.log("Yes 10 is more than 5"): console.log("No 10 is not more than 5");
 
 
 let a = 20;

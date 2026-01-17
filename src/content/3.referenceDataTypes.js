@@ -22,7 +22,7 @@ Dynamic typing
 JavaScript allows dynamic typing, which means that, unlike other languages which use static typing, JavaScript will allow
 typing dynamically, which means that the value of a variable can be changed dynamically.
 
-As studied before, there are 7 data types; in static typing, once we declare and initialise a variable with a data type,
+As studied before, there are 7 data types; in static typing, once we declare and initialize a variable with a data type,
 the data type cannot be changed even if it is reassigned, for example:
 
 in static typing, if:
@@ -40,7 +40,7 @@ x = Symbol("hi")      //it has now been reassigned with a string
 etc...
 
 this is a JavaScript feature which most developers do not like since most prefer static typing as it allows control
-over the data type and in huge projects, it can lead to bugs as we could mistakenly reassign any other data type where
+over the data type. In huge projects, it can lead to bugs as we could mistakenly reassign any other data type where
 we are not supposed to and that could lead to bugs and unexpected behaviours, which is why we have typescript.
 
 ----------------------
@@ -77,7 +77,7 @@ fulfilled, it will choose concatenating, and the two categories are:
 if both the aforementioned conditions are met, JavaScript will command the plus sign to concatenate rather than add.
 foe example:
 
-"5" + 5 = "55" //this is because it fulfills both conditions of sting and add and hence it will join both 5 into
+"5" + 5 = "55" //this is because it fulfills both conditions of sting and add, and hence it will join both 5 into
                  a string
 
 but since this feature is only available with the added sign, it doesn't work with other others,
@@ -95,13 +95,13 @@ there are a lot of places where we need boolean values to implement logic, there
 2. false
 
 but these two boolean values limit the potential of many JavaScript features such as statements, loops, functions, etc...
-which is why JavaScript has allocated true or false to keywords, data types and objects, and hence they can
+which is why JavaScript has allocated true or false to keywords, data types and objects. Hence, they can
 either be associated with being true, i,e, truthy
 or associated with being false, i.e. falsy.
 
 but since there could be a massive number of types, keywords, etc... how do we know which value is being assigned to them,
 to simplify this concept and make it easy for developers to remember, there are very few objects and data types which
-have falsy values, the rest all have truthy values. so all we have to remember are a few values which are falsy:
+have falsy values; the rest all have truthy values. so all we have to remember are a few values which are falsy:
 1. 0 // the number zero "0" is a falsy value
 2. false // the boolean false is obviously a falsy value
 3. null // the primitive data type "null" is also a falsy value
